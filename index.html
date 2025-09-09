@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Monitores 1440p: Custo-Benefício e Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos Gerais */
+        :root {
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --text-color: #212529;
+            --heading-color: #343a40;
+            --accent-color: #007bff;
+            --premium-accent-color: #9c27b0;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--card-background);
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: 700;
+            color: var(--heading-color);
+        }
+
+        header p {
+            margin-top: 15px;
+            color: #6c757d;
+            font-size: 1.1em;
+        }
+
+        /* Conteúdo do Artigo */
+        article {
+            background-color: var(--card-background);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        article h2 {
+            font-size: 2em;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        article h2:first-of-type {
+            margin-top: 0;
+        }
+        
+        .premium-article h2 {
+             border-bottom-color: var(--premium-accent-color);
+        }
+
+        article h3 {
+            font-size: 1.5em;
+            color: var(--heading-color);
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        article p {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+        }
+
+        article strong {
+            color: var(--heading-color);
+        }
+
+        /* Gemini Feature */
+        .gemini-feature {
+            margin-top: 50px;
+            padding: 40px;
+            border-radius: 12px;
+            background-color: var(--card-background);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+        }
+
+        .gemini-feature h2 {
+            text-align: center;
+            border-bottom: none;
+            margin-bottom: 10px;
+            font-size: 2em;
+            color: var(--heading-color);
+        }
+
+        .gemini-feature p {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1em;
+            color: #6c757d;
+        }
+
+        .gemini-feature textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-family: 'Inter', sans-serif;
+            font-size: 1em;
+            box-sizing: border-box; /* Important */
+            resize: vertical;
+        }
+
+        .gemini-feature button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #fff;
+            background-color: var(--accent-color);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        .gemini-feature button:hover {
+            background-color: #0056b3;
+        }
+
+        .gemini-feature button:active {
+            transform: scale(0.99);
+        }
+
+        .result-box {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #f0f4f8;
+            border-radius: 8px;
+            border: 1px solid #cddde8;
+            white-space: pre-wrap; /* To respect newlines from the model */
+            font-size: 1.05em;
+            line-height: 1.6;
+            display: none; /* Hidden by default */
+        }
+
+        .result-box.loading {
+            display: block;
+            color: #6c757d;
+            text-align: center;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            font-size: 0.95em;
+            color: #6c757d;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            article, .gemini-feature {
+                padding: 25px;
+            }
+            article h2, .gemini-feature h2 {
+                font-size: 1.7em;
+            }
+            article h3 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Guia de Monitores 1440p: Custo-Benefício e Premium</h1>
+            <p>Do equilíbrio perfeito à performance máxima: encontre o monitor ideal para você.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <article>
+                <h2>Os 5 Melhores Monitores 1440p Custo-Benefício</h2>
+                <p>Nesta seção, focamos em monitores que oferecem um excelente retorno sobre o investimento, combinando recursos modernos com um preço acessível.</p>
+
+                <h3>1. AOC Hero Quad Q27G2: Performance e Preço Acessível</h3>
+                <p>O <strong>AOC Hero Quad Q27G2</strong> é um dos queridinhos do público. Com uma tela de 27 polegadas, 1440p e 155Hz, ele oferece uma experiência de jogo fluida e imersiva. Seu painel VA garante um ótimo contraste, tornando-o uma escolha inteligente para quem busca performance sem esvaziar a carteira.</p>
+
+                <h3>2. LG UltraGear 24GN60R-B: Qualidade em um Formato Compacto</h3>
+                <p>Para quem tem um espaço mais limitado, o <strong>LG UltraGear 24GN60R-B</strong> é uma excelente opção. Com 24 polegadas, oferece resolução 1440p e uma impressionante taxa de atualização de 180Hz. É a prova de que não é preciso ter um monitor gigante para desfrutar de uma imagem nítida e fluida.</p>
+
+                <h3>3. Samsung Odyssey G5: Imersão e Preço Competitivo</h3>
+                <p>A linha <strong>Odyssey G5 da Samsung</strong> é conhecida por seus monitores curvos que proporcionam uma experiência de jogo mais imersiva. Com 1440p e 165Hz, o G5 é um dos modelos mais populares para quem busca um bom equilíbrio entre performance e preço.</p>
+
+                <h3>4. Acer Nitro XV272U: Versatilidade para Jogos e Trabalho</h3>
+                <p>O <strong>Acer Nitro XV272U</strong> é um monitor versátil. Seu painel IPS garante cores precisas e ótimos ângulos de visão, enquanto a resolução 1440p e a taxa de atualização de 170Hz proporcionam uma experiência fluida e detalhada para jogos e trabalho.</p>
+
+                <h3>5. Dell G2724D: Qualidade e Confiabilidade</h3>
+                <p>A Dell é conhecida por seus produtos de qualidade, e o <strong>G2724D</strong> não é exceção. Com 27 polegadas, 1440p e 165Hz, este monitor IPS oferece uma ótima experiência para jogos e produtividade, sendo uma opção sólida para uso geral.</p>
+            </article>
+
+            <article class="premium-article">
+                <h2>Os 5 Melhores Monitores 1440p Premium (Qualidade Máxima)</h2>
+                <p>Para os entusiastas que buscam a melhor tecnologia disponível, sem se prender ao orçamento. Aqui, a performance e a qualidade de imagem são reis.</p>
+
+                <h3>1. Alienware AW2725DF: O Rei da Velocidade e Contraste</h3>
+                <p>Com sua impressionante tela <strong>QD-OLED</strong>, este monitor oferece pretos verdadeiros, contraste infinito e uma taxa de atualização alucinante de <strong>360Hz</strong>. É a escolha definitiva para gamers competitivos que exigem o tempo de resposta mais rápido possível.</p>
+
+                <h3>2. Gigabyte AORUS FI27Q-X: Equilíbrio Perfeito em Alta Velocidade</h3>
+                <p>Este monitor utiliza um painel <strong>Super Speed IPS</strong> para combinar cores excelentes com um tempo de resposta de <strong>0.3ms</strong> e 240Hz. É ideal para quem não quer abrir mão da fidelidade de cores em jogos de ritmo acelerado.</p>
+
+                <h3>3. LG UltraGear 27GR95QE-B: Imersão Cinematográfica OLED</h3>
+                <p>Um dos pioneiros com tela <strong>OLED</strong> de 27 polegadas e 240Hz. Os usuários elogiam a fluidez e a vivacidade das cores, que transformam qualquer jogo ou filme em uma experiência visual deslumbrante.</p>
+
+                <h3>4. Dell UltraSharp U2723QE: A Escolha do Profissional</h3>
+                <p>Voltado para produtividade, este monitor com tecnologia <strong>IPS Black</strong> oferece precisão de cores excepcional e contraste superior. Sua vasta conectividade, incluindo um hub USB-C, o torna perfeito para um setup de trabalho limpo e eficiente.</p>
+
+                <h3>5. ASUS ROG Swift PG27AQDM: Brilho e Performance OLED</h3>
+                <p>Este modelo <strong>OLED</strong> da ASUS se destaca pelo seu brilho superior e um sistema de resfriamento customizado para mitigar o risco de burn-in. Combina a excelência visual da tecnologia com a performance de 240Hz esperada pela marca ROG.</p>
+            </article>
+            
+            <section class="gemini-feature">
+                <h2>✨ Assistente de Compras com IA</h2>
+                <p>Descreva como você usa seu computador (para jogos, trabalho, etc.) e nossa IA irá recomendar o melhor monitor da lista para você!</p>
+                <textarea id="userInput" placeholder="Ex: Jogo games de tiro competitivos e edito vídeos nas horas vagas..."></textarea>
+                <button id="getRecommendationBtn">Obter Recomendação</button>
+                <div id="recommendationResult" class="result-box"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI' ntech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const getRecommendationBtn = document.getElementById('getRecommendationBtn');
+        const userInput = document.getElementById('userInput');
+        const recommendationResult = document.getElementById('recommendationResult');
+
+        getRecommendationBtn.addEventListener('click', async () => {
+            const userQuery = userInput.value;
+            if (!userQuery.trim()) {
+                recommendationResult.style.display = 'block';
+                recommendationResult.innerText = 'Por favor, descreva suas necessidades para que eu possa ajudar.';
+                return;
+            }
+
+            recommendationResult.style.display = 'block';
+            recommendationResult.classList.add('loading');
+            recommendationResult.innerText = 'Analisando suas necessidades...';
+
+            const apiKey = ""; // Leave as-is
+
+            const monitorList = `
+--- MONITORES CUSTO-BENEFÍCIO ---
+1. AOC Hero Quad Q27G2: 27 polegadas, 1440p, 155Hz, painel VA. Bom para contraste e jogos imersivos. Ótimo custo-benefício.
+2. LG UltraGear 24GN60R-B: 24 polegadas, 1440p, 180Hz. Bom para quem tem pouco espaço e busca alta taxa de atualização para jogos competitivos.
+3. Samsung Odyssey G5: Curvo, 1440p, 165Hz. Bom para imersão em jogos.
+4. Acer Nitro XV272U: 27 polegadas, 1440p, 170Hz, painel IPS. Versátil, com cores precisas para jogos e trabalho.
+5. Dell G2724D: 27 polegadas, 1440p, 165Hz, painel IPS. Sólido para uso geral, com cores precisas para produtividade e bons para jogos.
+
+--- MONITORES PREMIUM (QUALIDADE MÁXIMA) ---
+6. Alienware AW2725DF: Tela QD-OLED, 360Hz. Ideal para gamers competitivos que buscam velocidade e contraste infinito.
+7. Gigabyte AORUS FI27Q-X: Super Speed IPS, 240Hz, 0.3ms. Combina cores excelentes com tempo de resposta muito baixo.
+8. LG UltraGear 27GR95QE-B: Tela OLED, 240Hz. Fantástico para imersão em jogos e consumo de mídia com cores vibrantes.
+9. Dell UltraSharp U2723QE: Tecnologia IPS Black. Foco profissional, com precisão de cores excepcional e hub USB-C.
+10. ASUS ROG Swift PG27AQDM: Tela OLED, 240Hz. Alto brilho para OLED e sistema de resfriamento para durabilidade.
+            `;
+
+            const systemPrompt = "Você é um especialista em hardware e monitores. Sua tarefa é ajudar um usuário a escolher o melhor monitor para suas necessidades com base em uma lista pré-definida de modelos de 'custo-benefício' e 'premium'. Seja amigável, direto e justifique sua recomendação com base nas características de cada monitor e nas necessidades do usuário. Se o usuário não mencionar orçamento, considere ambas as listas. Se ele mencionar economia, foque na lista de custo-benefício. Se mencionar 'o melhor' ou 'sem limite de preço', foque na lista premium. Responda em português do Brasil.";
+            
+            const prompt = `Com base na lista de monitores abaixo, qual você recomendaria para um usuário com as seguintes necessidades: "${userQuery}"?\n\nLista de Monitores:\n${monitorList}\n\nAnalise as necessidades do usuário e recomende o monitor mais adequado da lista, explicando o porquê da sua escolha.`;
+
+            try {
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+                const payload = {
+                    contents: [{ parts: [{ text: prompt }] }],
+                    systemInstruction: {
+                        parts: [{ text: systemPrompt }]
+                    },
+                };
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API Error: ${response.statusText}`);
+                }
+
+                const result = await response.json();
+                const candidate = result.candidates?.[0];
+                const text = candidate?.content?.parts?.[0]?.text;
+                
+                recommendationResult.classList.remove('loading');
+                if (text) {
+                    recommendationResult.innerText = text;
+                } else {
+                     recommendationResult.innerText = 'Desculpe, não consegui gerar uma recomendação. Verifique o console para mais detalhes.';
+                     console.error('API response is missing content:', result);
+                }
+
+            } catch (error) {
+                console.error('Error fetching recommendation:', error);
+                recommendationResult.classList.remove('loading');
+                recommendationResult.innerText = 'Ocorreu um erro ao buscar sua recomendação. Por favor, tente novamente mais tarde.';
+            }
+        });
+    </script>
+</body>
+</html>
